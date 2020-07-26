@@ -1,0 +1,7 @@
+{
+  "extends": "./node_modules/@vectorscores/configs/tsconfig",
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "outDir": "dist"
+  }
+}
