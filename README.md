@@ -1,7 +1,10 @@
 # websockets
 
+## Build
+`npm run build`
+
 ## Running WebSocket server
-Run `node websockets.js` to run standalone WebSocket server
+`node dist/`
 
 ## Message format
 [*id*, *type*, *msg*[, *data*]]
