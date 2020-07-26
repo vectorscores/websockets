@@ -1,9 +1,16 @@
 {
-  "name": "websockets",
+  "name": "@vectorscores/websockets",
   "version": "1.0.0",
   "description": "vectorscores websockets server",
-  "main": "index.js",
+  "private": "true",
+  "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
+    "build": "tsc -p .",
+    "fmt": "prettier src --write",
+    "lint": "eslint src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +24,15 @@
   },
   "homepage": "https://github.com/vectorscores/websockets#readme",
   "dependencies": {
+    "@types/ws": "^7.2.6",
     "ws": "^7.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/parser": "^3.7.0",
+    "@vectorscores/configs": "link",
+    "eslint": "^7.5.0",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.7"
   }
 }
